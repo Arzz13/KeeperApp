@@ -17,3 +17,4 @@ Steps to run the app:
 2) In Terminal 1, launch the backend server first by "node server.js" command.( or nodemon if you are using nodemon). 
 3) In Terminal 2, launch the React App by "npm start" command
 
+ 
