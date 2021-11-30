@@ -7,23 +7,25 @@ html {
   font-family: "Montserrat", sans-serif;
 }
 body {
-  background: #eee;
+  background: #F0EFE0 ;
   padding: 0 16px;
+  background-image: url("https://www.transparenttextures.com/patterns/brushed-alum-dark.png");
 }
 
 header {
-  background-color: #f5ba13;
-  margin: auto -16px;
+  background-color: #65393A;
+  margin: auto -16px;   /* -16px to right and left so as to remove the empty area on right and left.*/
   padding: 16px 32px;
+  text-align: center;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
 }
-
 header h1 {
   color: #fff;
   font-family: "McLaren", cursive;
   font-weight: 200;
+  display: inline;
 }
-
+ 
 footer {
   position: absolute;
   text-align: center;
@@ -31,14 +33,14 @@ footer {
   width: 100%;
   height: 2.5rem;
 }
-
 footer p {
-  color: #ccc;
+  color: #414A45;
 }
+
 .note {
   background: #fff;
-  border-radius: 7px;
-  box-shadow: 0 2px 5px #ccc;
+  border-radius: 7px;  /*Gives the small curve for the text boxes*/
+  box-shadow: 0 2px 5px #ccc; /*Attaches shadow to the element.The first two are offset x and y axis(relative to element).Third option is blur radius.Fourth one is colour of box shadow */
   padding: 10px;
   width: 240px;
   margin: 16px;
@@ -51,20 +53,20 @@ footer p {
 .note p {
   font-size: 1.1em;
   margin-bottom: 10px;
-  white-space: pre-wrap;
-  word-wrap: break-word;
+  white-space: pre-wrap; /* How to handle the spaces.Text will wrap to next line when necessary, and on line breaks*/
+  word-wrap: break-word; /*  allows long words to be able to be broken and wrap onto the next line.*/
 }
-
 .note button {
   position: relative;
-  float: right;
+  float: right;    /* (Float lets image or div or other elments to sit next to it) Used for positioning and formatting content .The element floats to the right of its container */
   margin-right: 10px;
-  color: #f5ba13;
+  color: #65393A;;
   border: none;
   width: 36px;
   height: 36px;
-  cursor: pointer;
+  cursor: pointer; /* specifies the mouse cursor to be displayed when pointing over an element */
   outline: none;
+ 
 }
 
 form.create-note {
@@ -90,7 +92,7 @@ form.create-note button {
   position: absolute;
   right: 18px;
   bottom: -18px;
-  background: #f5ba13;
+  background: #65393A;;
   color: #fff;
   border: none;
   border-radius: 50%;
@@ -100,3 +102,4 @@ form.create-note button {
   cursor: pointer;
   outline: none;
 }
+
